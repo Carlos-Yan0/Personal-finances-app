@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Bootstrap import -->
+     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+     <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+
+    <main>
+        <div class="w-100 text-center">
+            <h3>Sign up</h3>
+        </div>
+        <form action="">
+            <label for="name">name:</label>
+            <input type="text" class="form-control">
+
+            <label for="email" class="mt-2">E-mail:</label>
+            <input type="email" class="form-control">
+
+            <label for="password" class="mt-2">Password:</label>
+            <input type="password" class="form-control">
+
+            <label for="confirmPassword" class="mt-2">Confirm your password:</label>
+            <input type="password" class="form-control">
+
+            <input type="checkbox" class="mt-2">Show password
+
+            <button type="submit" class="btn btn-success mt-3 w-100">Sign in</button>
+        </form>
+        <div class="text-center w-100">
+            <p>Already have an account? <a href="{% url 'index' %}">Log in</a></p>
+        </div>
+    </main>
+    
+</body>
+</html>
