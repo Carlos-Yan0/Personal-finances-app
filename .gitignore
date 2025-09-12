@@ -1,7 +1,7 @@
 venv/
 
 # Python
-__pycache__/
+accounts/__pycache__/
 *.py[cod]
 
 # Django
