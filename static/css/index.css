@@ -12,3 +12,22 @@ main{
 main a{
     text-decoration: none;
 }
+
+@media (max-width: 480px){
+
+body, html{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+}
+main{
+    width: 80dvw;
+    height: auto;
+}
+main a{
+    text-decoration: none;
+}
+
+}
